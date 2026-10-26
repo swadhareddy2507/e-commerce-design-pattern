@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSmart E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ShopSmart</h1>
+        <p>Smart Shopping, Better Prices</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Product Catalog</h2>
+            <div id="products" class="products"></div>
+        </section>
+
+        <section class="card">
+            <h2>Price Drop Notifications</h2>
+            <div id="notifications">
+                No notifications yet.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Shopping Cart</h2>
+
+            <div id="cart">
+                Your cart is empty.
+            </div>
+
+            <h3 id="total">Total: ₹0</h3>
+
+            <button onclick="undoAction()">Undo</button>
+            <button onclick="redoAction()">Redo</button>
+
+            <br><br>
+
+            <input id="couponCode" placeholder="Enter SAVE10">
+
+            <button onclick="applyCoupon()">Apply Coupon</button>
+        </section>
+
+        <section class="card">
+            <h2>Checkout</h2>
+
+            <select id="paymentMethod">
+                <option value="upi">UPI</option>
+                <option value="card">Credit/Debit Card</option>
+                <option value="wallet">Wallet</option>
+            </select>
+
+            <button onclick="checkout()">Pay Now</button>
+
+            <p id="paymentMessage"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Behavioral Design Patterns Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
